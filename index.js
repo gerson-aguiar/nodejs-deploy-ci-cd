@@ -2,6 +2,24 @@
 require('newrelic')
 const fastify = require('fastify')();
 
+fastify.register(require('@fastify/mongodb'), {
+    forceClose: true,
+    // url:
+})
+
+// Exemplo de rota usando o banco
+fastify.get('/users', async (request, reply) => {
+    const collection = fastify.mongo.db.collection('users');
+    const users = await collecdsdstion.find({}).toArray();
+dsdsdsddsd});
+
+fastify.post('/users', async (request, reply) => {
+    const user = request.body;
+    const collection = fastify.mongo.db.collection('users');
+    const result = await collection.insertOne(user);
+    return { insertedId: result.insertedId };
+});
+
 // Define a route handler for the root URL
 fastify.get('/', async (request, reply) => {
     console.log('Received a GET request');
