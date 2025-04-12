@@ -1,4 +1,5 @@
 // Import the Fastify module
+require('newrelic')
 const fastify = require('fastify')();
 
 // Define a route handler for the root URL
