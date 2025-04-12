@@ -4,7 +4,7 @@ require('newrelic');
 const fastify = require('fastify')();
 
 fastify.get('/', async (request, reply) => {
-    return { hello: 'world joao' };
+    return { hello: 'world' };
 });
 
 fastify.post('/data', async (request, reply) => {
