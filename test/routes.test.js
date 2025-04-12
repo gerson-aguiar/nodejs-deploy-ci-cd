@@ -3,6 +3,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import fastifyApp from '../server';
 
 beforeAll(async () => {
+    // Cria o usuario Joao
     await fastifyApp.ready(); // necessário antes de usar
 });
 
