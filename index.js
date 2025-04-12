@@ -1,6 +1,6 @@
 // Import the Fastify module
 require('newrelic')
-const fastify = require('fastify')();
+// const fastify = require('fastify')();
 
 // fastify.register(require('@fastify/mongodb'), {
 //     forceClose: true,
