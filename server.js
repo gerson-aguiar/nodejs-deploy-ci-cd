@@ -9,6 +9,7 @@ fastify.get('/', async (request, reply) => {
 
 fastify.post('/data', async (request, reply) => {
     const payload = request.body;
+    console.log("INFO, fluxo de criar usuario")
     return { receivedData: payload };
 });
 
